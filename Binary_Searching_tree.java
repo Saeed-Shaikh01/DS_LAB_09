@@ -6,16 +6,16 @@ package bst;
 
 /**
  *
- * @author Ali Computers
+ *
  */
 import java.util.LinkedList;
 import java.util.Queue;
-public class Binary_ST {
+public class Binary_Searching_tree {
     Node root;
     public Binary_ST(){
         root=null;
     }
-    //INSERTION METHOD
+    
     public void insertion(int value){
         root = insertRec(root, value);
     }
@@ -39,25 +39,22 @@ public class Binary_ST {
         if(root==null){
             return root;
         }
-        //Case 1: If the deleted node is leaf node just directly delete it
-        // Find the node to delete
+        
         if (key < root.data) {
             root.left = deleteRec(root.left, key); // If the key is smaller, go left
         } else if (key > root.data) {
             root.right = deleteRec(root.right, key); // If the key is greater, go right
         } else {
-            // If key is the same as root's data, then this is the node to be deleted
-            // Case 2: Node with only one child or no child
+           
             if (root.left == null) {
                 return root.right;
             } else if (root.right == null) {
                 return root.left;
             }
-            // Case 3: Node with two children
-            // Get the inorder successor (smallest in the right subtree)
+          )
             root.data = MinValue(root.right);
 
-            // Delete the inorder successor
+           
             root.right = deleteRec(root.right, root.data);
         }
 
@@ -165,17 +162,17 @@ public class Binary_ST {
         tree.searchNode(50);
         System.out.println("LEVEL ORDER");
         tree.levelorder();
-       /* System.out.println("\nDelete 20:");
-        tree.deletion(20); // Deleting a leaf node
+        System.out.println("\nDelete 20:");
+        tree.deletion(20); 
         tree.Inorder(); 
         
         System.out.println("\nDelete 30:");
-        tree.deletion(30); // Deleting a node with one child
+        tree.deletion(30); /
         tree.Inorder(); 
 
         System.out.println("\nDelete 50:");
-        tree.deletion(50); // Deleting a node with two children
-        tree.Inorder(); */
+        tree.deletion(50);
+        tree.Inorder(); 
     }
     
 }
