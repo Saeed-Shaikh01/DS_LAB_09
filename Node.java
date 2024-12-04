@@ -6,7 +6,7 @@ package bst;
 
 /**
  *
- * @author Ali Computers
+ * 
  */
 public class Node {
     int data;
