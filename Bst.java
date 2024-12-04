@@ -6,15 +6,13 @@ package bst;
 
 /**
  *
- * @author Ali Computers
+ * 
  */
-public class BST {
+public class Bst {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
