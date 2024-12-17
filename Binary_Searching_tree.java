@@ -167,7 +167,7 @@ public class Binary_Searching_tree {
         tree.Inorder(); 
         
         System.out.println("\nDelete 30:");
-        tree.deletion(30); /
+        tree.deletion(30); 
         tree.Inorder(); 
 
         System.out.println("\nDelete 50:");
