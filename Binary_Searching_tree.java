@@ -12,7 +12,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 public class Binary_Searching_tree {
     Node root;
-    public Binary_ST(){
+    public Binary_Searching_tree(){
         root=null;
     }
     
